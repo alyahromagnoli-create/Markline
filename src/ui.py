@@ -140,7 +140,7 @@ class MainWindow(QMainWindow):
         self.stack=QStackedWidget();self.nav=[]
         for i,name in enumerate(['我的成绩','快速对比','数据设置']):
             b=QPushButton(name);b.setObjectName('nav');b.setCheckable(True);b.clicked.connect(lambda checked=False,n=i:self.navigate(n));sl.addWidget(b);self.nav.append(b)
-        sl.addStretch();sl.addWidget(label('Markline 1.0\n本地保存 · 离线使用','subtle',True));base.addWidget(sidebar);base.addWidget(self.stack,1)
+        sl.addStretch();sl.addWidget(label('Markline 1.0.1\n本地保存 · 离线使用','subtle',True));base.addWidget(sidebar);base.addWidget(self.stack,1)
         self.build_courses();self.build_compare();self.build_settings();self.navigate(0)
         self.refresh_courses();self.refresh_peers()
         saved=self.store.setting('last_session')
@@ -444,7 +444,7 @@ class MainWindow(QMainWindow):
         cl.addWidget(label('60–89分：(成绩 − 50) ÷ 10\n90–100分：4.0\n优＝95，良＝85，中等＝75，合格/及格＝65。\n四六级、形势与政策和零学分课程不计入；其他不支持的成绩列为待处理。\n所有课程按学分加权。百分制加权平均分与累计GPA分别计算。',wrap=True));l.addWidget(w)
         w,cl=card();cl.addWidget(label('使用说明'))
         cl.addWidget(label('1. 我的成绩：导入表格、确认处理范围，必要时编辑课程。\n2. 快速对比：输入双方相同截止时点的学分和GPA，添加未来课程。\n3. 单科反推：选中一行，其他课程保持表中假设不变。\n4. 多科试算：直接修改各科成绩，查看累计变化与最高可行性。\n5. 保存方案后可打开副本继续调整；保存对象只保存对方当前汇总。\n\n本工具不支持60分以下、不自动执行重修替代或校方规则。发现重修记录时请手动排除不应计入的记录。手填舍入GPA得到的是基于输入值的估算。',wrap=True));l.addWidget(w)
-        l.addStretch();l.addWidget(label('Markline 1.0 · 第三方许可见软件包 licenses 文件夹','subtle',True))
+        l.addStretch();l.addWidget(label('Markline 1.0.1 · 第三方许可见软件包 licenses 文件夹','subtle',True))
 
     def open_resource(self,name):
         import sys

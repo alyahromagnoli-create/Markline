@@ -17,7 +17,7 @@ def main():
         os.environ['QT_LOGGING_RULES']='qt.qpa.fonts.warning=false'
     except Exception as e:
         import ctypes
-        ctypes.windll.user32.MessageBoxW(None,f'数据目录不可写：{data}\n{e}\n请把软件移动到可写目录，或使用 --data-dir 指定D盘数据目录。','Markline',16);return 1
+        ctypes.windll.user32.MessageBoxW(None,f'数据目录不可写：{data}\n{e}\n请把软件移动到可写目录，或使用 --data-dir 指定可写的数据目录。','Markline',16);return 1
     from PySide6.QtWidgets import QApplication,QMessageBox
     from PySide6.QtCore import QLockFile
     from storage import Store
