@@ -1,0 +1,29 @@
+Markline 1.0 — third-party software notices
+
+PySide6_Essentials 6.12.0
+LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+
+
+shiboken6 6.12.0
+LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+
+
+xlrd 2.0.1
+BSD
+http://www.python-excel.org/
+
+openpyxl 3.1.5
+MIT
+https://openpyxl.readthedocs.io
+
+et_xmlfile 2.0.0
+MIT
+https://foss.heptapod.net/openpyxl/et_xmlfile
+
+PyInstaller 6.22.3
+GPLv2-or-later with a special exception which allows to use PyInstaller to build and distribute non-free programs (including commercial ones)
+
+
+Qt/PySide6 runtime is distributed under the applicable LGPLv3 terms. License texts and shipped original notices accompany this application. Markline uses Qt Core, Gui and Widgets only.
+
+Markline source and rebuild instructions are bundled in the sibling sources directory. Qt for Python 6.12.0 library source: https://download.qt.io/official_releases/QtForPython/pyside6/PySide6-6.12.0-src/ ; project source: https://code.qt.io/pyside/pyside-setup.git/ . Library replacement/rebuilding: build with the desired compatible PySide6-Essentials/shiboken6 wheels and run build.ps1 on Windows. Packaged source does not include personal data.

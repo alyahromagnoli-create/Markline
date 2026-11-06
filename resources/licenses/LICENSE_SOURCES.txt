@@ -1,0 +1,4 @@
+LGPL-3.0 / GPL-3.0: https://www.gnu.org/licenses/
+openpyxl 3.1.5 and et_xmlfile 2.0.0: original source distributions downloaded from https://pypi.org/simple/
+Qt/PySide6 licensing: https://doc.qt.io/qtforpython-6/
+Commercial-license reference files retained from wheels are original notices, not a claim that Markline uses a commercial license.
